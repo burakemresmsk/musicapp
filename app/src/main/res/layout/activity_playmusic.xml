@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_playmusic"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/playlistlogo"
+        android:layout_marginBottom="252dp"
+        android:layout_above="@+id/button_play"
+        android:layout_alignParentStart="true" />
+
+
+    <ListView
+        android:id="@+id/listview_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="3px"
+        android:layout_above="@+id/button_play" />
+
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:elevation="0dp"
+        android:text="Start Music"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/colorAccent"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/button_backmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_fast_rewind_black_24dp"
+            android:layout_above="@+id/button_loopmusic"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/button_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignBottom="@+id/button_backmusic"
+            android:layout_alignEnd="@+id/button_oylama"
+            android:layout_alignStart="@+id/button_oylama"
+            android:layout_alignTop="@+id/button_backmusic"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_play_arrow_black_24dp"
+            android:layout_weight="0.41" />
+
+        <Button
+            android:id="@+id/button_forwardmusic"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/button_playpause"
+            android:layout_alignBottom="@+id/button_playpause"
+
+
+            android:layout_alignStart="@+id/button_loopmusic"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_fast_forward_black_24dp"
+            android:layout_weight="0.33" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="58dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    <Button
+        android:id="@+id/button_shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_shuffle_black_24dp"
+        android:layout_alignTop="@+id/button_oylama"
+        android:layout_alignEnd="@+id/button_play"
+        android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/button_oylama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.33"
+
+            android:background="@android:color/transparent"
+
+            android:drawableTop="@drawable/ic_check_box_black_24dp" />
+
+        <Button
+        android:id="@+id/button_loopmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_repeat_black_24dp"
+        android:layout_alignBottom="@+id/button_oylama"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.33" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/button_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/button_loopmusic"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_mic_black_24dp" />
+
+        <Button
+            android:id="@+id/button_aktifuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignBottom="@+id/button_backmusic"
+            android:layout_alignEnd="@+id/button_oylama"
+            android:layout_alignStart="@+id/button_oylama"
+            android:layout_alignTop="@+id/button_backmusic"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_assignment_ind_black_24dp"
+            android:layout_weight="0.5" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

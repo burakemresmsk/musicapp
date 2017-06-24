@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/activity_create_group"
+    android:background="@drawable/backgrp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+
+        android:text="Group Name"
+        android:textColor="@color/colorDarkGrey"
+
+
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textview_grupname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@color/cardview_dark_background"
+        android:textColor="@android:color/holo_green_light"
+
+
+        android:layout_toEndOf="@+id/textView"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/button_create_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_green_light"
+        android:textColor="@color/colorDarkGrey"
+
+
+        android:alpha="0.6"
+        android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+        android:text="Create Playlist"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="151dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_startmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/cardview_dark_background"
+        android:textColor="@android:color/holo_green_light"
+
+        android:alpha="0.6"
+        android:drawableLeft="@drawable/ic_playlist_play_black_24dp"
+        android:text="START MUSIC"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/button_create_playlist"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

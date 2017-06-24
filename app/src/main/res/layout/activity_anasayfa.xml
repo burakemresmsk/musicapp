@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_anasayfa"
+    android:background="@drawable/backa">
+
+    <Button
+        android:id="@+id/profil_button"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/holo_green_dark"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:text="Profile"
+        android:alpha="0.5"
+
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="87dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:alpha="0.5"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@color/colorDarkGrey"
+
+
+        android:drawableLeft="@drawable/ic_group_black_24dp"
+        android:text="Create Group"
+
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/button_join_room"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_join_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:alpha="0.5"
+
+
+        android:background="@color/cardview_dark_background"
+        android:textColor="@android:color/holo_green_light"
+
+        android:drawableLeft="@drawable/ic_group_add_black_24dp"
+        android:text="Join Group"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/profil_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/samelogo1"
+        android:layout_alignBottom="@+id/button_create"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
